@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-mm-rest-proxy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/modelmeshserving/odh-mm-rest-proxy@sha256:2232a302ba3b138cb4050ab8cb21d5c1db3944ba1c289b65b57fac5d8e7782c2
+        name: container-image
+        resources: {}
+status: {}
