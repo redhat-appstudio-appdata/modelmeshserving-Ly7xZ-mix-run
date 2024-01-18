@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-modelmesh-runtime-adapter
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/modelmeshserving/odh-modelmesh-runtime-adapter@sha256:f8ff5cec3fc61dd49c101fddff90e97f483ae4beb06c0d376e3bb21304c968bc
+        name: container-image
+        resources: {}
+status: {}
