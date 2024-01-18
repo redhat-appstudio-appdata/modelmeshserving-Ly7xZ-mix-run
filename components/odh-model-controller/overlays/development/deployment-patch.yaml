@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: odh-model-controller
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/modelmeshserving/odh-model-controller@sha256:2d8593aec25d73a3ff38f38e26c4e5151bde588d34eccf1df1e68be85a7087b0
+        name: container-image
+        resources: {}
+status: {}
