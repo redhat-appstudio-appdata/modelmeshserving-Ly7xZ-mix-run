@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: odh-model-controller
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
